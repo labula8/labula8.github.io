@@ -49,6 +49,14 @@
     - [README](?file=05-当下-Now/02-今日/00-README "README")
     - [GTD](?file=05-当下-Now/02-今日/01-GTD "GTD")
     - [通往财富自由之路](?file=05-当下-Now/02-今日/02-通往财富自由之路 "通往财富自由之路")
+    - [天才](?file=05-当下-Now/02-今日/03-天才 "天才")
+    - [个人操作系统](?file=05-当下-Now/02-今日/04-个人操作系统 "个人操作系统")
+    - [多维技能](?file=05-当下-Now/02-今日/05-多维技能 "多维技能")
+    - [重要专题](?file=05-当下-Now/02-今日/06-重要专题 "重要专题")
+    - [书签](?file=05-当下-Now/02-今日/07-书签 "书签")
+    - [node.js-learn](?file=05-当下-Now/02-今日/08-node.js-learn "node.js-learn")
+    - [Pomelo](?file=05-当下-Now/02-今日/09-Pomelo "Pomelo")
+    - [js-learn](?file=05-当下-Now/02-今日/10-js-learn "js-learn")
 - **明日**
     - [README](?file=05-当下-Now/03-明日/00-README "README")
 
