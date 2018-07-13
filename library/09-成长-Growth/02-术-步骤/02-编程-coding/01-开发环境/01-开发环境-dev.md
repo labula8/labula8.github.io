@@ -8,8 +8,14 @@
 
 # 软件安装
 
+## linux
+
 gcc g++
 
 vim
 
 git
+
+## windows
+
+https://tortoisegit.org
