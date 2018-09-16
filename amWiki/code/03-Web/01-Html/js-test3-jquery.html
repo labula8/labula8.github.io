@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="jquery-1.10.2.min_65682a2.s.js">
+</head>
+
+<body>
+
+<p>
+测试 html中，用js，控制输出
+</p>
+
+Hello!
+
+<script>
+document.write("World");
+document.write("<p> <strong>Hello World! </strong> </p>");
+</script>
+
+<p>
+js 对事件，做出反应
+</p>
+
+<script>
+function myUpdate()
+{
+    alert('myUpdate()');
+    x = document.getElementById("demo");// 找到元素
+    x.innerHTML = "Hello new String demo";// 改变内容
+}
+</script>
+
+<p id="demo">
+String Demo
+</p>
+<button type="button" onclick="myUpdate()">Button</button>
+
+<script>
+function myUpdate_jQuery()
+{
+    alert('myUpdate_jQuery()');
+    $("#demojq").html("Hello new String demo jQuery")
+}
+//$(document).ready(myUpdate_jQuery);
+</script>
+
+<p id="demojq">
+String Demo jQuery
+</p>
+<button type="button" onclick="myUpdate_jQuery()">Button_jQuery</button>
+
+</body>
+</html>

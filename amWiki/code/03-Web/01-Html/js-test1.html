@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+
+<p>
+测试 html中，用js，控制输出
+</p>
+
+Hello!
+
+<script>
+document.write("World");
+document.write("<p> <strong>Hello World! </strong> </p>");
+</script>
+
+<p>
+js 对事件，做出反应
+</p>
+
+<button type="button" onclick="alert('Hello')">Button1</button>
+
+<script>
+function myClick()
+{
+    alert('Hello2')
+}
+</script>
+<button type="button" onclick="myClick()">Button2</button>
+
+<script>
+function myUpdate()
+{
+    alert('myUpdate()');
+    x = document.getElementById("demo");// 找到元素
+    x.innerHTML = "Hello new String demo";// 改变内容
+}
+</script>
+
+<p id="demo">
+String Demo
+</p>
+<button type="button" onclick="myUpdate()">Button3</button>
+
+
+</body>
+</html>

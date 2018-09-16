@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+
+<p>
+测试 html中，用js，控制time输出
+</p>
+
+Hello!
+
+<script>
+function myClick()
+{
+    //alert('myClick()');
+    var d = new Date();
+    //document.write(d)
+    //alert(d);
+    var h = d.getHours();
+    var m = d.getMinutes();
+    var s = d.getSeconds();
+    //alert(h)
+    //alert(m)
+    var tm = h + ":" + m + ":" + s
+    //alert("time is: " + tm)
+    x = s % 24;
+    alert(x);
+    
+    if (x < 6)
+    {
+        document.write("It's time to Sleeping");
+    }
+    else if (x > 6 && x < 9)
+    {
+        document.write("It's time to get up");
+    }
+    else if (x > 21 && x < 24)
+    {
+        document.write("It's time to go to bed");
+    }
+    
+    
+}
+</script>
+<button type="button" onclick="myClick()">Button</button>
+
+
+
+</body>
+</html>
