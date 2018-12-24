@@ -55,6 +55,9 @@
     - [重要专题](?file=05-当下-Now/02-今日/06-重要专题 "重要专题")
     - [书签](?file=05-当下-Now/02-今日/07-书签 "书签")
     - [把时间当朋友](?file=05-当下-Now/02-今日/08-把时间当朋友 "把时间当朋友")
+    - [RFC协议](?file=05-当下-Now/02-今日/09-RFC协议 "RFC协议")
+    - [智慧城市](?file=05-当下-Now/02-今日/10-智慧城市 "智慧城市")
+    - [STL-源码剖析](?file=05-当下-Now/02-今日/11-STL-源码剖析 "STL-源码剖析")
 - **明日**
     - [README](?file=05-当下-Now/03-明日/00-README "README")
 
@@ -142,8 +145,12 @@
             - [C99-标准](?file=09-成长-Growth/02-术-步骤/02-编程-coding/02-精进-C/05-C99-标准 "C99-标准")
             - [C11-标准](?file=09-成长-Growth/02-术-步骤/02-编程-coding/02-精进-C/06-C11-标准 "C11-标准")
             - [参考](?file=09-成长-Growth/02-术-步骤/02-编程-coding/02-精进-C/07-参考 "参考")
+            - [C-实践](?file=09-成长-Growth/02-术-步骤/02-编程-coding/02-精进-C/08-C-实践 "C-实践")
+            - [C-历史](?file=09-成长-Growth/02-术-步骤/02-编程-coding/02-精进-C/09-C-历史 "C-历史")
+            - [C-编程范式](?file=09-成长-Growth/02-术-步骤/02-编程-coding/02-精进-C/10-C-编程范式 "C-编程范式")
         - **精进-Cpp**
             - [Cpp](?file=09-成长-Growth/02-术-步骤/02-编程-coding/03-精进-Cpp/01-Cpp "Cpp")
+            - [Cpp-基础](?file=09-成长-Growth/02-术-步骤/02-编程-coding/03-精进-Cpp/02-Cpp-基础 "Cpp-基础")
         - **Web编程**
             - **HTML**
                 - [html](?file=09-成长-Growth/02-术-步骤/02-编程-coding/04-Web编程/01-HTML/01-html "html")
@@ -152,6 +159,16 @@
                 - [js-learn](?file=09-成长-Growth/02-术-步骤/02-编程-coding/04-Web编程/02-JavaScript/01-js-learn "js-learn")
                 - [node.js-learn](?file=09-成长-Growth/02-术-步骤/02-编程-coding/04-Web编程/02-JavaScript/02-node.js-learn "node.js-learn")
                 - [Pomelo](?file=09-成长-Growth/02-术-步骤/02-编程-coding/04-Web编程/02-JavaScript/03-Pomelo "Pomelo")
+        - **数据结构**
+            - [数据结构](?file=09-成长-Growth/02-术-步骤/02-编程-coding/05-数据结构/01-数据结构 "数据结构")
+        - **算法**
+            - [算法](?file=09-成长-Growth/02-术-步骤/02-编程-coding/06-算法/01-算法 "算法")
+            - [高级算法](?file=09-成长-Growth/02-术-步骤/02-编程-coding/06-算法/02-高级算法 "高级算法")
+        - **面向对象编程**
+        - **理论模型**
+            - [图灵机](?file=09-成长-Growth/02-术-步骤/02-编程-coding/08-理论模型/01-图灵机 "图灵机")
+        - **架构**
+            - [后端架构师-技术图谱](?file=09-成长-Growth/02-术-步骤/02-编程-coding/09-架构/01-后端架构师-技术图谱 "后端架构师-技术图谱")
     - **调试**
         - [gdb调试](?file=09-成长-Growth/02-术-步骤/03-调试/01-gdb调试 "gdb调试")
 - **器-工具**

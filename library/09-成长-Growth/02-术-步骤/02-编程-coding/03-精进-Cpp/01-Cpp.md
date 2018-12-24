@@ -1,5 +1,6 @@
 
-C++ 
+C++
+==
 
 C++ 编程语言 (C plus plus programing Language)
 
@@ -9,13 +10,13 @@ C++ 编程语言 (C plus plus programing Language)
 
 	语音
 	语调
-	
+
 ## 无声
 
 	语法
 	语义
 	语境
-	
+
 	字
 		关键字
 		标点
@@ -28,7 +29,7 @@ C++ 编程语言 (C plus plus programing Language)
 # C/C++
 
 	程序 = 数据结构 + 算法
-	
+
 	程序
 		字
 			关键字
@@ -58,7 +59,7 @@ C++ 编程语言 (C plus plus programing Language)
 				顺序
 				选择
 				循环
-	
+
 	算法
 		时间
 			O(n)
@@ -70,29 +71,3 @@ C++ 编程语言 (C plus plus programing Language)
 				2^N
 				位
 				字节
-				
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
