@@ -1,6 +1,6 @@
 cuda-helloworld
 
-## ±àÒë»·¾³
+## ç¼–è¯‘ç¯å¢ƒ
 
 C:\ProgramData\NVIDIA Corporation\CUDA Samples\v10.0
 
@@ -9,7 +9,7 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA
 ## Coding
 
 
-## ²Î¿¼
+## å‚è€ƒ
 
 http://www.cnblogs.com/xing901022/p/3248469.html
 

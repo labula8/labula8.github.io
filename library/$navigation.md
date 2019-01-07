@@ -165,10 +165,22 @@
             - [算法](?file=09-成长-Growth/02-术-步骤/02-编程-coding/06-算法/01-算法 "算法")
             - [高级算法](?file=09-成长-Growth/02-术-步骤/02-编程-coding/06-算法/02-高级算法 "高级算法")
         - **面向对象编程**
+            - [面向对象](?file=09-成长-Growth/02-术-步骤/02-编程-coding/07-面向对象编程/01-面向对象 "面向对象")
         - **理论模型**
             - [图灵机](?file=09-成长-Growth/02-术-步骤/02-编程-coding/08-理论模型/01-图灵机 "图灵机")
+            - [编程范式](?file=09-成长-Growth/02-术-步骤/02-编程-coding/08-理论模型/02-编程范式 "编程范式")
         - **架构**
             - [后端架构师-技术图谱](?file=09-成长-Growth/02-术-步骤/02-编程-coding/09-架构/01-后端架构师-技术图谱 "后端架构师-技术图谱")
+        - **设计模式**
+            - [设计模式](?file=09-成长-Growth/02-术-步骤/02-编程-coding/10-设计模式/01-设计模式 "设计模式")
+        - **机器学习**
+            - [机器学习](?file=09-成长-Growth/02-术-步骤/02-编程-coding/11-机器学习/01-机器学习 "机器学习")
+            - [深度学习](?file=09-成长-Growth/02-术-步骤/02-编程-coding/11-机器学习/02-深度学习 "深度学习")
+            - **CUDA编程**
+                - [NVIDIA_CUDA_License](?file=09-成长-Growth/02-术-步骤/02-编程-coding/11-机器学习/03-CUDA编程/00-NVIDIA_CUDA_License "NVIDIA_CUDA_License")
+                - [cuda入门](?file=09-成长-Growth/02-术-步骤/02-编程-coding/11-机器学习/03-CUDA编程/01-cuda入门 "cuda入门")
+                - [cuda-HelloWorld](?file=09-成长-Growth/02-术-步骤/02-编程-coding/11-机器学习/03-CUDA编程/02-cuda-HelloWorld "cuda-HelloWorld")
+                - [cuda入门](?file=09-成长-Growth/02-术-步骤/02-编程-coding/11-机器学习/03-CUDA编程/03-cuda入门 "cuda入门")
     - **调试**
         - [gdb调试](?file=09-成长-Growth/02-术-步骤/03-调试/01-gdb调试 "gdb调试")
 - **器-工具**
