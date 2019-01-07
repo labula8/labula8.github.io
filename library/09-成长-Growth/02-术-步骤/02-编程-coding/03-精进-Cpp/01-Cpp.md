@@ -71,3 +71,12 @@ C++ 编程语言 (C plus plus programing Language)
 				2^N
 				位
 				字节
+
+# 外部调用
+
+混合编程，被外部调用
+C调用C++
+Object-C调用C++
+Python调用C++
+Java调用C++
+...
