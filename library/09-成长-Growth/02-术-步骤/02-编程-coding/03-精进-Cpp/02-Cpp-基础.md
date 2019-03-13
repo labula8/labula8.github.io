@@ -387,10 +387,8 @@ C++程序：
                             覆盖之前方法
                         重载
                             根据运行时，选择方法
-              泛型编程
-                通用模式
-                STL 标准模板库
-                    STL的六大组件
+              泛型编程（通用模式）
+                STL 标准模板库（STL的六大组件）
                     1.容器（Container），
                         是一种数据结构，如list，vector，和deques ，以模板类的方法提供。为了访问容器中的数据，可以使用由容器类输出的迭代器；
                     2.迭代器（Iterator），
@@ -644,46 +642,46 @@ C++程序：
 
 参考
 
-https://blog.csdn.net/creator123123/article/details/82150183
-引用参考
-https://www.cnblogs.com/duwenxing/p/7421100.html
+    https://blog.csdn.net/creator123123/article/details/82150183
+    引用参考
+    https://www.cnblogs.com/duwenxing/p/7421100.html
 
-https://blog.csdn.net/xbb123456rt/article/details/78089517 
+    https://blog.csdn.net/xbb123456rt/article/details/78089517 
 
-C++发明人书籍：
-    C++程序设计语言（第1~3部分）        https://item.jd.com/11130236139.html
-    C++程序设计语言（第4部分：标准库） https://item.jd.com/12034136.html
-    C++程序设计：原理与实践（进阶篇）  https://item.jd.com/12173150.html
-    C++程序设计语言(特别版) 
-    
-转义符
-https://baike.baidu.com/item/%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6/86397?fromtitle=%E8%BD%AC%E4%B9%89%E7%AC%A6&fromid=6151115
-宏拼接
-https://www.cnblogs.com/little-ant/p/3463080.html
-关键字
-https://baike.baidu.com/item/C%2B%2B%E5%85%B3%E9%94%AE%E5%AD%97
+    C++发明人书籍：
+        C++程序设计语言（第1~3部分）        https://item.jd.com/11130236139.html
+        C++程序设计语言（第4部分：标准库） https://item.jd.com/12034136.html
+        C++程序设计：原理与实践（进阶篇）  https://item.jd.com/12173150.html
+        C++程序设计语言(特别版) 
+        
+    转义符
+    https://baike.baidu.com/item/%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6/86397?fromtitle=%E8%BD%AC%E4%B9%89%E7%AC%A6&fromid=6151115
+    宏拼接
+    https://www.cnblogs.com/little-ant/p/3463080.html
+    关键字
+    https://baike.baidu.com/item/C%2B%2B%E5%85%B3%E9%94%AE%E5%AD%97
 
-STL 标准模板库
-https://www.cnblogs.com/yejianyong/p/7137998.html
+    STL 标准模板库
+    https://www.cnblogs.com/yejianyong/p/7137998.html
 
-extern
-https://www.cnblogs.com/yuxingli/p/7821102.html
+    extern
+    https://www.cnblogs.com/yuxingli/p/7821102.html
 
-编译链接
-https://www.cnblogs.com/kekec/p/3238741.html
+    编译链接
+    https://www.cnblogs.com/kekec/p/3238741.html
 
-boost
-https://baike.baidu.com/item/boost/69144
+    boost
+    https://baike.baidu.com/item/boost/69144
 
-C++ 开源框架
-https://blog.csdn.net/sunjing_/article/details/79690563
+    C++ 开源框架
+    https://blog.csdn.net/sunjing_/article/details/79690563
 
-学习C++从入门到精通的的十本最经典书籍
-https://www.cnblogs.com/lizhigang/p/6933031.html
+    学习C++从入门到精通的的十本最经典书籍
+    https://www.cnblogs.com/lizhigang/p/6933031.html
 
-Linux C/C++ 编译器cc\gcc\g++\c++区别
-https://blog.csdn.net/jimmyleeee/article/details/83860388
+    Linux C/C++ 编译器cc\gcc\g++\c++区别
+    https://blog.csdn.net/jimmyleeee/article/details/83860388
 
-https://baike.baidu.com/item/Intel%20C++%20Compiler
+    https://baike.baidu.com/item/Intel%20C++%20Compiler
 
 
