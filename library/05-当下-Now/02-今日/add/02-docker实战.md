@@ -133,6 +133,7 @@ docker.io   docker.io/ansibleplaybookbundle/mysql-apb                        An 
 docker.io   docker.io/cloudfoundry/cf-mysql-ci                               Image used in CI of cf-mysql-release            0                    
 docker.io   docker.io/cloudposse/mysql                                       Improved `mysql` service with support for ...   0                    [OK]
 
+# docker pull : 从镜像仓库中拉取或者更新指定镜像
 
 docker search mysql --filter=stars=100
 
@@ -264,16 +265,377 @@ docker exec -it 246cf050d68b /bin/bash
 cat /etc/issue
 Ubuntu 16.04.5 LTS \n \l
 
-Codis
+# Codis
+
+docker run -d --name="codis-master-yu1" -h "codis" -p 18087:18087 -p 11000:11000 -p 19000:19000 codis-master-yu
+
 
 docker run -d --name="codis" -h "codis" -p 18087:18087 -p 11000:11000 -p 19000:19000 ruo91/codis
 docker exec codis /bin/bash codis-start all start
 
 docker exec -it fc89e2d984f5 /bin/bash
 
+
+codis-start all start&
+
 dashboard
 
 http://192.168.39.63:18087/admin/
+
+http://192.168.56.103:18087/admin/
+
+
+
+whereis codis-server
+codis-server: /opt/codis/bin/codis-server
+
+#install redis-2.8.21
+
+wget -c http://download.redis.io/releases/redis-2.8.21.tar.gz
+
+tar xzf redis-2.8.21.tar.gz
+
+make -j8
+
+make install
+
+whereis redis-server
+redis-server: /usr/local/bin/redis-server
+
+redis-cli -p 19000
+
+
+[root@localhost]/usr/local/bin# redis-benchmark -n 10000 -q -p 19000
+PING_INLINE: 14970.06 requests per second
+PING_BULK: 18018.02 requests per second
+SET: 15898.25 requests per second
+GET: 16835.02 requests per second
+INCR: 16666.67 requests per second
+LPUSH: 17331.02 requests per second
+LPOP: 17301.04 requests per second
+SADD: 14124.29 requests per second
+SPOP: 12468.83 requests per second
+LPUSH (needed to benchmark LRANGE): 16611.29 requests per second
+LRANGE_100 (first 100 elements): 10570.83 requests per second
+LRANGE_300 (first 300 elements): 6309.15 requests per second
+LRANGE_500 (first 450 elements): 4384.04 requests per second
+LRANGE_600 (first 600 elements): 3541.08 requests per second
+MSET (10 keys): 10548.52 requests per second
+
+
+[root@localhost]/usr/local/bin# redis-benchmark -n 100000 -q -p 19000
+PING_INLINE: 16173.38 requests per second
+PING_BULK: 17301.04 requests per second
+SET: 15124.02 requests per second
+GET: 16669.45 requests per second
+INCR: 16225.86 requests per second
+LPUSH: 16761.65 requests per second
+LPOP: 17256.26 requests per second
+SADD: 16686.13 requests per second
+SPOP: 17082.34 requests per second
+LPUSH (needed to benchmark LRANGE): 16934.80 requests per second
+LRANGE_100 (first 100 elements): 10458.06 requests per second
+LRANGE_300 (first 300 elements): 6243.76 requests per second
+LRANGE_500 (first 450 elements): 4463.69 requests per second
+LRANGE_600 (first 600 elements): 3495.77 requests per second
+MSET (10 keys): 10275.38 requests per second
+
+docker run -d --name="codis-yu" -h "codis" -p 28087:28087 -p 21000:21000 -p 29000:29000 codis-yu
+
+/usr/bin/docker-current: Error response from daemon: Conflict. The container name "/codis" is already in use by container 4b1409fb8ab6875786bad3f148b4aa017a3c6d8a8ea3fa19ddeb570488adfc40. You have to remove (or rename) that container to be able to reuse that name..
+See '/usr/bin/docker-current run --help'.
+
+docker commit -m "update codis-yu" -a "docker update" 4b1409fb8ab6 codis-yu
+
+ apt-get update
+ apt-get install vim
+
+# Zookeepser 配置
+
+echo ruok | nc localhost 2181
+
+java -version
+java version "1.7.0_79"
+OpenJDK Runtime Environment (IcedTea 2.5.5) (7u79-2.5.5-0ubuntu0.14.04.2)
+OpenJDK 64-Bit Server VM (build 24.79-b02, mixed mode)
+
+egrep -v "^#|^$" zoo.cfg
+
+
+```
+java -Dzookeeper.log.dir=. -Dzookeeper.root.logger=INFO,CONSOLE -cp /opt/zookeeper/bin/../build/classes:/opt/zookeeper/bin/../build/lib/*.jar:/opt/zookeeper/bin/../lib/slf4j-log4j12-1.6.1.jar:/opt/zookeeper/bin/../lib/slf4j-api-1.6.1.jar:/opt/zookeeper/bin/../lib/netty-3.7.0.Final.jar:/opt/zookeeper/bin/../lib/log4j-1.2.16.jar:/opt/zookeeper/bin/../lib/jline-0.9.94.jar:/opt/zookeeper/bin/../zookeeper-3.4.6.jar:/opt/zookeeper/bin/../src/java/lib/*.jar:/opt/zookeeper/bin/../conf: -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.local.only=false org.apache.zookeeper.server.quorum.QuorumPeerMain /opt/zookeeper/bin/../conf/zoo.cfg
+```
+
+
+/opt/zookeeper/bin
+
+./zkServer.sh status 
+
+./zkServer.sh restart
+
+
+
+root@codis:/opt/zookeeper/bin# netstat -anp | grep 172.17.0
+tcp6       0      0 172.17.0.3:2888         :::*                    LISTEN      628/java        
+tcp6       0      0 172.17.0.3:3888         :::*                    LISTEN      628/java        
+tcp6       0      0 172.17.0.3:58654        172.17.0.2:3888         ESTABLISHED 628/java        
+tcp6       0      0 172.17.0.3:2888         172.17.0.2:58394        ESTABLISHED 628/java       
+
+
+./zkCli.sh -server 172.17.0.2:2181
+Connecting to 172.17.0.2:2181
+2019-03-26 08:25:59,396 [myid:] - INFO  [main:Environment@100] - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2019-03-26 08:25:59,401 [myid:] - INFO  [main:Environment@100] - Client environment:host.name=codis
+2019-03-26 08:25:59,401 [myid:] - INFO  [main:Environment@100] - Client environment:java.version=1.7.0_79
+2019-03-26 08:25:59,405 [myid:] - INFO  [main:Environment@100] - Client environment:java.vendor=Oracle Corporation
+2019-03-26 08:25:59,405 [myid:] - INFO  [main:Environment@100] - Client environment:java.home=/usr/lib/jvm/java-7-openjdk-amd64/jre
+2019-03-26 08:25:59,405 [myid:] - INFO  [main:Environment@100] - Client environment:java.class.path=/opt/zookeeper/bin/../build/classes:/opt/zookeeper/bin/../build/lib/*.jar:/opt/zookeeper/bin/../lib/slf4j-log4j12-1.6.1.jar:/opt/zookeeper/bin/../lib/slf4j-api-1.6.1.jar:/opt/zookeeper/bin/../lib/netty-3.7.0.Final.jar:/opt/zookeeper/bin/../lib/log4j-1.2.16.jar:/opt/zookeeper/bin/../lib/jline-0.9.94.jar:/opt/zookeeper/bin/../zookeeper-3.4.6.jar:/opt/zookeeper/bin/../src/java/lib/*.jar:/opt/zookeeper/bin/../conf:
+2019-03-26 08:25:59,405 [myid:] - INFO  [main:Environment@100] - Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+2019-03-26 08:25:59,406 [myid:] - INFO  [main:Environment@100] - Client environment:java.io.tmpdir=/tmp
+2019-03-26 08:25:59,406 [myid:] - INFO  [main:Environment@100] - Client environment:java.compiler=<NA>
+2019-03-26 08:25:59,407 [myid:] - INFO  [main:Environment@100] - Client environment:os.name=Linux
+2019-03-26 08:25:59,407 [myid:] - INFO  [main:Environment@100] - Client environment:os.arch=amd64
+2019-03-26 08:25:59,407 [myid:] - INFO  [main:Environment@100] - Client environment:os.version=3.10.0-693.2.2.el7.x86_64
+2019-03-26 08:25:59,407 [myid:] - INFO  [main:Environment@100] - Client environment:user.name=root
+2019-03-26 08:25:59,407 [myid:] - INFO  [main:Environment@100] - Client environment:user.home=/root
+2019-03-26 08:25:59,408 [myid:] - INFO  [main:Environment@100] - Client environment:user.dir=/opt/zookeeper/bin
+2019-03-26 08:25:59,410 [myid:] - INFO  [main:ZooKeeper@438] - Initiating client connection, connectString=172.17.0.2:2181 sessionTimeout=30000 watcher=org.apache.zookeeper.ZooKeeperMain$MyWatcher@3e5a0cf
+Welcome to ZooKeeper!
+2019-03-26 08:25:59,481 [myid:] - INFO  [main-SendThread(172.17.0.2:2181):ClientCnxn$SendThread@975] - Opening socket connection to server 172.17.0.2/172.17.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+JLine support is enabled
+2019-03-26 08:25:59,499 [myid:] - INFO  [main-SendThread(172.17.0.2:2181):ClientCnxn$SendThread@852] - Socket connection established to 172.17.0.2/172.17.0.2:2181, initiating session
+2019-03-26 08:25:59,528 [myid:] - INFO  [main-SendThread(172.17.0.2:2181):ClientCnxn$SendThread@1235] - Session establishment complete on server 172.17.0.2/172.17.0.2:2181, sessionid = 0x169b919fa760002, negotiated timeout = 30000
+
+WATCHER::
+
+WatchedEvent state:SyncConnected type:None path:null
+[zk: 172.17.0.2:2181(CONNECTED) 0] ls /
+[zk, zookeeper]
+[zk: 172.17.0.2:2181(CONNECTED) 1] ls /
+[zk, zookeeper]
+[zk: 172.17.0.2:2181(CONNECTED) 2] ls /
+[zk, zookeeper]
+[zk: 172.17.0.2:2181(CONNECTED) 3] ls /
+[zk, zookeeper]
+[zk: 172.17.0.2:2181(CONNECTED) 4] ls /
+[zk, zookeeper]
+[zk: 172.17.0.2:2181(CONNECTED) 5] ls /
+[zk, zookeeper]
+[zk: 172.17.0.2:2181(CONNECTED) 6] quit
+Quitting...
+2019-03-26 08:27:05,480 [myid:] - INFO  [main:ZooKeeper@684] - Session: 0x169b919fa760002 closed
+2019-03-26 08:27:05,481 [myid:] - INFO  [main-EventThread:ClientCnxn$EventThread@512] - EventThread shut down
+
+docker commit -m "update codis-yu" -a "docker update" b09dc76a3f87 codis-yu
+
+docker commit -m "update codis-master-yu" -a "docker update" 682a30a8af2c codis-master-yu
+
+# 单独启动 codis-server
+
+
+/opt/codis/conf
+
+cat config.ini
+zk=localhost:2181  //zookeeper的地址, 如果是zookeeper集群，可以这么写: zk=hostname1:2181,hostname2:2181,hostname3:2181,hostname4:2181,hostname5:2181,如果是etcd，则写成http://hostname1:port,http://hostname2:port,http://hostname3:port
+product=test     //产品名称, 这个codis集群的名字, 可以认为是命名空间, 不同命名空间的codis没有交集
+proxy_id=proxy_1  //proxy会读取, 用于标记proxy的名字, 针对多个proxy的情况, 可以使用不同的config.ini, 只需要更改 proxy_id 即可
+net_timeout=5     //检测状态时间间隔
+dashboard_addr=localhost:18087  //dashboard 服务的地址，CLI 的所有命令都依赖于 dashboard 的 RESTful API，所以必须启动
+coordinator=zookeeper   //如果用etcd，则将zookeeper替换为etcd
+
+cat usage.md 
+0. start zookeeper       //启动zookeeper服务
+1. change config items in config.ini  //修改codis配置文件
+2. ./start_dashboard.sh  //启动 dashboard
+3. ./start_redis.sh      //启动redis实例
+4. ./add_group.sh        //添加redis组，一个redis组只能有一个master
+5. ./initslot.sh         //初始化槽
+6. ./start_proxy.sh      //启动proxy
+7. ./set_proxy_online.sh  //上线proxy项目
+8. open browser to http://localhost:18087/admin //访问web
+
+#docker 重启
+
+docker kill b09dc76a3f87
+
+
+然后列出所有的容器 ID：
+
+docker ps -a -q
+删除前应该停止所有的容器：
+
+docker stop $(docker ps -a -q)
+批量删除tag为"<none>"镜像可以采用如下方法（下面两种方式均可以）：
+
+docker rmi $(docker images | grep "^<none>" | awk "{print $3}")
+docker images | grep none | awk '{print $3}' | xargs docker rmi
+
+# 删除 <none> 容器
+docker images | grep none | awk '{print $3}' | xargs docker rmi
+
+# 强制删除 <none> 容器
+docker rmi -f fe93266bcf95 
+
+
+
+
+```
+/opt/codis/bin/codis-start all start &
+
+root@codis:/opt/codis/bin# ./codis-start all start
+Dashboard start...
+done
+Redis start...
+done
+Add group start...
+add group 1 with a master (localhost:6380), Notice: do not use localhost when in produciton
+{
+  "msg": "OK",
+  "ret": 0
+}
+add group 2 with a master (localhost:6381), Notice: do not use localhost when in produciton
+{
+  "msg": "OK",
+  "ret": 0
+}
+add group 3 with a master (localhost:6382), Notice: do not use localhost when in produciton
+{
+  "msg": "OK",
+  "ret": 0
+}
+add group 4 with a master (localhost:6383), Notice: do not use localhost when in produciton
+{
+  "msg": "OK",
+  "ret": 0
+}
+done
+slots initializing...
+{
+  "msg": "OK",
+  "ret": 0
+}
+done
+
+set slot ranges to server groups...
+{
+  "msg": "OK",
+  "ret": 0
+}
+{
+  "msg": "OK",
+  "ret": 0
+}
+{
+  "msg": "OK",
+  "ret": 0
+}
+{
+  "msg": "OK",
+  "ret": 0
+}
+done
+shut down proxy_1...
+{
+  "msg": "OK",
+  "ret": 0
+}
+done
+
+start new proxy...
+done
+
+sleep 3s..
+
+  _____  ____    ____/ /  (_)  _____
+ / ___/ / __ \  / __  /  / /  / ___/
+/ /__  / /_/ / / /_/ /  / /  (__  )
+\___/  \____/  \__,_/  /_/  /____/
+
+set proxy_1 online
+{
+  "msg": "OK",
+  "ret": 0
+}
+done
+
+cat /tmp/zookeeper/myid 
+2
+
+./zkCli.sh -server 127.0.0.1:2181
+
+rmr /zk/codis/db_test/dashboard
+rmr /zk/codis/db_test/proxy
+
+ cat zoo.cfg
+tickTime=2000
+initLimit=10
+syncLimit=5
+dataDir=/tmp/zookeeper
+
+clientPort=2181
+
+server.1=172.17.0.2:2888:3888
+server.2=172.17.0.3:2888:3888
+
+
+./codis-start redis start
+
+./codis-start proxy start
+
+
+/usr/lib/zookeeper/bin/zkServer.sh start
+
+nc -v -w 10 -z 127.0.0.1 2181
+
+
+/usr/lib/zookeeper/bin/zkCli.sh -server 127.0.0.1:2181
+
+/opt/codis/bin/codis-config -c /etc/codis/config.ini dashboard &
+
+/opt/codis/bin/codis-config -c /etc/codis/config.ini slot init &
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -338,6 +700,22 @@ https://www.cnblogs.com/jie-fang/p/7920863.html
 
 gitlab
 
+https://github.com/ruo91/docker-codis
+
 http://blog.51cto.com/2179425/2082899
 
 https://www.cnblogs.com/Finley/p/8595506.html
+
+Zookeeper集群搭建
+
+https://www.cnblogs.com/linuxprobe/p/5851699.html
+
+https://www.cnblogs.com/xmzncc/p/6218694.html
+
+https://blog.51cto.com/liweizhong/1639918
+
+https://blog.csdn.net/zyx_ly/article/details/84726509 
+
+https://www.cnblogs.com/liangsky/p/5458659.html
+
+https://blog.51cto.com/navyaijm/1637688
