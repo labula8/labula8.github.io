@@ -246,3 +246,5 @@ https://skyao.io/
 linkerd
 
 https://gitbook.cn/gitchat/column/5a3740d7d7fd1364997391bf/topic/5a3757cfd7fd136499739b8e
+
+https://jimmysong.io/posts/future-architecture-from-soa-to-cloud-native/
