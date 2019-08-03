@@ -123,4 +123,27 @@ https://www.8btc.com/article/106022
 
 http://researchlab.github.io/about/
 
-    https://majing.io/posts/10000033542989
+https://majing.io/posts/10000033542989
+
+项目管理
+
+https://segmentfault.com/a/1190000012029671
+
+iot
+
+https://jimeng.io/
+
+
+http://gorm.book.jasperxu.com/
+
+http://jinzhu.me/gorm/
+
+https://segmentfault.com/a/1190000013216540?utm_source=tag-newest
+
+https://github.com/astaxie
+
+https://beego.me/docs/intro
+
+https://www.aicyun.com/
+
+http://www.haodaquan.com/83
