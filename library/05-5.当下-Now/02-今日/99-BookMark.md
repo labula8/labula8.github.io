@@ -123,4 +123,13 @@ https://www.8btc.com/article/106022
 
 http://researchlab.github.io/about/
 
-    https://majing.io/posts/10000033542989
+https://majing.io/posts/10000033542989
+    
+doc to markdown
+
+https://word2md.com/
+
+–Ú¡–Õº
+
+https://mermaidjs.github.io/mermaid-live-editor
+https://github.com/mingcheng/mermaid-gitbook-zh/blob/master/content/zh-cn/README.md
