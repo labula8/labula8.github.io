@@ -129,7 +129,39 @@ doc to markdown
 
 https://word2md.com/
 
+https://www.jianshu.com/p/b0be43b03015
+
 序列图
 
 https://mermaidjs.github.io/mermaid-live-editor
 https://github.com/mingcheng/mermaid-gitbook-zh/blob/master/content/zh-cn/README.md
+https://github.com/knsv/mermaid
+https://www.cnblogs.com/schips/p/11039975.html
+https://bramp.github.io/js-sequence-diagrams/
+https://www.jianshu.com/p/a9ff5a9cdb25
+https://laboo.top/2018/10/17/mk/
+
+聊一聊Java开发必备的几个小工具！
+http://dy.163.com/v2/article/detail/E8VD6STE0511Q1AF.html
+
+consul
+
+http://blog.cxiangnet.cn/2018/04/10/consul-%E4%BB%8B%E7%BB%8D/
+https://www.lijiaocn.com/%E9%A1%B9%E7%9B%AE/2018/08/17/consul-usage.html
+
+go-micro
+
+https://juejin.im/entry/5b6feed36fb9a0098b25143c
+https://www.jianshu.com/p/4ed1010b4c22
+https://segmentfault.com/a/1190000017572032
+
+go-tool
+
+https://github.com/jinzhu/gorm
+Logrus的使用
+https://www.jianshu.com/p/752d712f70ce
+https://github.com/sirupsen/logrus
+
+居住证
+
+http://jzzjf.12333sh.gov.cn/jzzjf/loginAfter

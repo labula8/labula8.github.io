@@ -2,7 +2,7 @@
 
 
 ## 简单介绍
-
+```
 Micro是一个用来简化微服务开发的框架，提供了如下功能：
 
 Go Micro - 基于Golang的插件式RPC框架，提供服务发现，客户端负载均衡，编码，同步和异步通讯功能。
@@ -20,9 +20,11 @@ Go-micro拥有很多特性：
 基于rpc的请求响应
 异步的消息通讯
 接口可插拔
+```
 
 ### 特性
 
+```
 Go Micro把分布式系统的各种细节抽象出来。下面是它的主要特性。
 
 服务发现（Service Discovery） - 自动服务注册与名称解析。
@@ -49,6 +51,7 @@ Request/Response - RPC通信基于支持双向流的请求/响应方式，我们
 可插拔接口（Pluggable Interfaces） - Go Micro为每个分布式系统抽象出接口。
     因此，Go Micro的接口都是可插拔的，允许其在运行时不可知的情况下仍可支持。
     所以只要实现接口，可以在内部使用任何的技术。更多插件请参考：github.com/micro/go-plugins。
+```
 
 ## 主要interface
 
@@ -60,6 +63,7 @@ Request/Response - RPC通信基于支持双向流的请求/响应方式，我们
 
 服务之间通信的接口。也就是服务发送和接收的最终实现方式，是由这些接口定制的。
 
+```
 type Socket interface {
     Recv(*Message) error
     Send(*Message) error
@@ -81,6 +85,7 @@ type Transport interface {
     Listen(addr string, opts ...ListenOption) (Listener, error)
     String() string
 }
+```
 
 ### Codec
 
@@ -88,7 +93,7 @@ type Transport interface {
 默认的实现方式是protobuf,当然也有其他的实现方式，json、protobuf、jsonrpc、mercury等等。
 
 源码
-
+```
 
 type Codec interface {
     ReadHeader(*Message, MessageType) error
@@ -106,12 +111,14 @@ type Message struct {
     Error  string
     Header map[string]string
 }
+```
+
 Codec接口的Write方法就是编码过程，两个Read是解码过程。
 
 ### Registry
 
 服务的注册和发现，目前实现的consul,mdns, etcd,etcdv3,zookeeper,kubernetes.等等，
-
+```
 type Registry interface {
     Register(*Service, ...RegisterOption) error
     Deregister(*Service) error
@@ -121,32 +128,33 @@ type Registry interface {
     String() string
     Options() Options
 }
-
+```
 ### Selector
 
-以Registry为基础，Selector 是客户端级别的负载均衡，当有客户端向服务发送请求时， 
+以Registry为基础，Selector 是客户端级别的负载均衡，当有客户端向服务发送请求时，
 selector根据不同的算法从Registery中的主机列表，得到可用的Service节点，进行通信。
 目前实现的有循环算法和随机算法，默认的是随机算法。
-
+```
 type Selector interface {
     Init(opts ...Option) error
     Options() Options
     // Select returns a function which should return the next node
-    
+
     Select(service string, opts ...SelectOption) (Next, error)
     // Mark sets the success/error against a node
-    
+
     Mark(service string, node *registry.Node, err error)
     // Reset returns state back to zero for a service
-    
+
     Reset(service string)
     // Close renders the selector unusable
-    
+
     Close() error
     // Name of the selector
-    
+
     String() string
 }
+```
 默认的是实现是本地缓存，当前实现的有blacklist,label,named等方式。
 
 ### Broker
@@ -154,7 +162,7 @@ type Selector interface {
 Broker是消息发布和订阅的接口。很简单的一个例子，因为服务的节点是不固定的，
 如果有需要修改所有服务行为的需求，可以使服务订阅某个主题，当有信息发布时，
 所有的监听服务都会收到信息，根据你的需要做相应的行为。
-
+```
 type Broker interface {
     Options() Options
     Address() string
@@ -165,12 +173,13 @@ type Broker interface {
     Subscribe(string, Handler, ...SubscribeOption) (Subscriber, error)
     String() string
 }
+```
 Broker默认的实现方式是http方式，但是这种方式不要在生产环境用。go-plugins里有很多成熟的消息队列实现方式，有kafka、nsq、rabbitmq、redis，等等。
 
 ### Client
 
 Client是请求服务的接口，他封装Transport和Codec进行rpc调用，也封装了Brocker进行信息的发布。
-
+```
 type Client interface {
     Init(...Option) error
     Options() Options
@@ -181,13 +190,14 @@ type Client interface {
     Publish(ctx context.Context, msg Message, opts ...PublishOption) error
     String() string
 }
+```
 当然他也支持双工通信 Stream 这些具体的实现方式和使用方式，以后会详细解说。
 默认的是rpc实现方式，他还有grpc和http方式，在go-plugins里可以找到
 
 ### Server
 
 Server看名字大家也知道是做什么的了。监听等待rpc请求。监听broker的订阅信息，等待信息队列的推送等。
-
+```
 type Server interface {
     Options() Options
     Init(...Option) error
@@ -201,12 +211,12 @@ type Server interface {
     Stop() error
     String() string
 }
-
+```
 ### Service
 
 Service是Client和Server的封装，他包含了一系列的方法使用初始值去初始化Service和Client，
 使我们可以很简单的创建一个rpc服务。
-
+```
 type Service interface {
     Init(...Option)
     Options() Options
@@ -215,13 +225,14 @@ type Service interface {
     Run() error
     String() string
 }
-
+```
 ## 安装
 
 由于Micro的服务发现并没有自己实现，仅仅是提供Plugin来接入第三方服务发现(consul, etcd), 默认使用的是consule
 安装参考: consul installation doc
 安装protobuf
 
+```
 ./consul --help agent
 
 Usage: consul agent [options]
@@ -527,7 +538,7 @@ dns查询指定服务地址，默认后缀为service.consul，注意查询类型
 
 $ dig @127.0.0.1 -p 8600 web.service.consul srv
  dig @127.0.0.1 -p 8600 web2.service.consul srv
- 
+
 ; <<>> DiG 9.9.4-RedHat-9.9.4-61.el7 <<>> @127.0.0.1 -p 8600 web.service.consul srv
 ; (1 server found)
 ;; global options: +cmd
@@ -648,16 +659,16 @@ $ curl 127.0.0.1:8500/v1/kv/k1
 key的读取接口支持6个参数：
 
 key (string: "")         - Specifies the path of the key to read.
-dc (string: "")          - Specifies the datacenter to query. 
-                           This will default to the datacenter of the agent being queried. 
+dc (string: "")          - Specifies the datacenter to query.
+                           This will default to the datacenter of the agent being queried.
                            This is specified as part of the URL as a query parameter.
-recurse (bool: false)    - Specifies if the lookup should be recursive and key treated as a prefix instead of a literal match. 
+recurse (bool: false)    - Specifies if the lookup should be recursive and key treated as a prefix instead of a literal match.
                            This is specified as part of the URL as a query parameter.
-raw (bool: false)        - Specifies the response is just the raw value of the key, without any encoding or metadata. 
+raw (bool: false)        - Specifies the response is just the raw value of the key, without any encoding or metadata.
                            This is specified as part of the URL as a query parameter.
-keys (bool: false)       - Specifies to return only keys (no values or metadata). Specifying this implies recurse. 
+keys (bool: false)       - Specifies to return only keys (no values or metadata). Specifying this implies recurse.
                            This is specified as part of the URL as a query parameter.
-separator (string: '/')  - Specifies the character to use as a separator for recursive lookups. 
+separator (string: '/')  - Specifies the character to use as a separator for recursive lookups.
                            This is specified as part of the URL as a query parameter.
 例如查看指定路径下的所有key：
 
@@ -675,8 +686,8 @@ consul-template是一个根据consul中的数据自动渲染配置文件的工�
 Q: How is this different than confd?
 A: The answer is simple: Service Discovery as a first class citizen. You are
 also encouraged to read this Pull Request on the project for more background
-information. We think confd is a great project, but Consul Template fills a 
-missing gap. Additionally, Consul Template has first class integration with 
+information. We think confd is a great project, but Consul Template fills a
+missing gap. Additionally, Consul Template has first class integration with
 Vault, making it easy to incorporate secret material like database credentials
 or API tokens into configuration files.
 不过我感觉没有什么太大的区别，confd支持的后端还更丰富：
@@ -698,6 +709,7 @@ ssm (AWS Simple Systems Manager Parameter Store)
 wget https://releases.hashicorp.com/consul-template/0.19.5/consul-template_0.19.5_linux_amd64.tgz
 tar -xvf consul-template_0.19.5_linux_amd64.tgz
 解压后得到一个二进制文件consul-template。
+```
 
 ## 参考
 
@@ -744,4 +756,4 @@ consul
 
 https://releases.hashicorp.com/consul/1.5.3/
 
-
+http://blog.cxiangnet.cn/2018/04/10/consul-%E4%BB%8B%E7%BB%8D/
