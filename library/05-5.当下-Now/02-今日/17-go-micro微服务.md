@@ -757,3 +757,7 @@ consul
 https://releases.hashicorp.com/consul/1.5.3/
 
 http://blog.cxiangnet.cn/2018/04/10/consul-%E4%BB%8B%E7%BB%8D/
+
+logrus
+
+https://www.jianshu.com/p/752d712f70ce
