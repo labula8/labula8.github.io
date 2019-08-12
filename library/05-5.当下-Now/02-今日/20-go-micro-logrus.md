@@ -101,6 +101,40 @@ level
 
 ```
 
+```
+
+../gitlab-pt.ztgame.com/Microservice/common/redis/redis.go:4:2: cannot find package "github.com/go-redis/redis" in any of:
+	/data/git/labula8/test/goTest/go/src/github.com/go-redis/redis (from $GOROOT)
+	/data/git/labula8/test/goTest/work/src/github.com/go-redis/redis (from $GOPATH)
+../gitlab-pt.ztgame.com/Microservice/common/middleware/go2sky.go:9:2: cannot find package "github.com/tetratelabs/go2sky" in any of:
+	/data/git/labula8/test/goTest/go/src/github.com/tetratelabs/go2sky (from $GOROOT)
+	/data/git/labula8/test/goTest/work/src/github.com/tetratelabs/go2sky (from $GOPATH)
+../gitlab-pt.ztgame.com/Microservice/common/middleware/go2sky.go:10:2: cannot find package "github.com/tetratelabs/go2sky/reporter" in any of:
+	/data/git/labula8/test/goTest/go/src/github.com/tetratelabs/go2sky/reporter (from $GOROOT)
+	/data/git/labula8/test/goTest/work/src/github.com/tetratelabs/go2sky/reporter (from $GOPATH)
+../github.com/micro/go-micro/broker/http_broker.go:27:2: cannot find package "golang.org/x/net/http2" in any of:
+	/data/git/labula8/test/goTest/go/src/golang.org/x/net/http2 (from $GOROOT)
+	/data/git/labula8/test/goTest/work/src/golang.org/x/net/http2 (from $GOPATH)
+../github.com/micro/go-micro/transport/http_transport.go:20:2: cannot find package "golang.org/x/net/http2/h2c" in any of:
+	/data/git/labula8/test/goTest/go/src/golang.org/x/net/http2/h2c (from $GOROOT)
+	/data/git/labula8/test/goTest/work/src/golang.org/x/net/http2/h2c (from $GOPATH)
+../github.com/micro/mdns/client.go:13:2: cannot find package "golang.org/x/net/ipv4" in any of:
+	/data/git/labula8/test/goTest/go/src/golang.org/x/net/ipv4 (from $GOROOT)
+	/data/git/labula8/test/goTest/work/src/golang.org/x/net/ipv4 (from $GOPATH)
+../github.com/micro/mdns/client.go:14:2: cannot find package "golang.org/x/net/ipv6" in any of:
+	/data/git/labula8/test/goTest/go/src/golang.org/x/net/ipv6 (from $GOROOT)
+	/data/git/labula8/test/goTest/work/src/golang.org/x/net/ipv6 (from $GOPATH)
+../github.com/snowzach/rotatefilehook/rotatefilehook.go:7:2: cannot find package "gopkg.in/natefinch/lumberjack.v2" in any of:
+	/data/git/labula8/test/goTest/go/src/gopkg.in/natefinch/lumberjack.v2 (from $GOROOT)
+	/data/git/labula8/test/goTest/work/src/gopkg.in/natefinch/lumberjack.v2 (from $GOPATH)
+    
+    go get github.com/go-redis/redis
+    go get github.com/tetratelabs/go2sky
+    go get golang.org/x/net/http2/h2c
+    
+    https://github.com/ably-forks/google.golang.org_grpc.git
+```
+
 ## 参考
 
 logrus

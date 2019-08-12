@@ -80,6 +80,7 @@
     - [go-micro微服务](?file=05-5.当下-Now/02-今日/17-go-micro微服务 "go-micro微服务")
     - [k8s入门](?file=05-5.当下-Now/02-今日/18-k8s入门 "k8s入门")
     - [go-数据结构](?file=05-5.当下-Now/02-今日/19-go-数据结构 "go-数据结构")
+    - [go-micro-logrus](?file=05-5.当下-Now/02-今日/20-go-micro-logrus "go-micro-logrus")
     - [杂项](?file=05-5.当下-Now/02-今日/88-杂项 "杂项")
     - [BookMark](?file=05-5.当下-Now/02-今日/99-BookMark "BookMark")
 - **明日**
