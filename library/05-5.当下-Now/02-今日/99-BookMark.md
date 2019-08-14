@@ -180,3 +180,27 @@ https://www.jianshu.com/p/419efe983cb2
 dht
 
 https://github.com/fanpei91/torsniff
+http://jzzjf.12333sh.gov.cn/jzzjf/loginAfterhttps://majing.io/posts/10000033542989
+
+项目管理
+
+https://segmentfault.com/a/1190000012029671
+
+iot
+
+https://jimeng.io/
+
+
+http://gorm.book.jasperxu.com/
+
+http://jinzhu.me/gorm/
+
+https://segmentfault.com/a/1190000013216540?utm_source=tag-newest
+
+https://github.com/astaxie
+
+https://beego.me/docs/intro
+
+https://www.aicyun.com/
+
+http://www.haodaquan.com/83
