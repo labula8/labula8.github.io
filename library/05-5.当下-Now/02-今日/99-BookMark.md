@@ -165,3 +165,18 @@ https://github.com/sirupsen/logrus
 居住证
 
 http://jzzjf.12333sh.gov.cn/jzzjf/loginAfter
+
+
+bazel-构建工具
+
+https://bazel.build/
+https://www.cnblogs.com/zjutzz/p/10182099.html
+
+protobuf
+
+https://www.jianshu.com/p/00be93ed230c
+https://www.jianshu.com/p/419efe983cb2
+
+dht
+
+https://github.com/fanpei91/torsniff
