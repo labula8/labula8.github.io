@@ -2,6 +2,7 @@
 
 
 ## 简单介绍
+
 ```
 Micro是一个用来简化微服务开发的框架，提供了如下功能：
 
@@ -234,210 +235,6 @@ type Service interface {
 
 ```
 ./consul --help agent
-
-Usage: consul agent [options]
-
-  Starts the Consul agent and runs until an interrupt is received. The
-  agent represents a single node in a cluster.
-
-HTTP API Options
-
-  -datacenter=<value>
-     Datacenter of the agent.
-
-Command Options
-
-  -advertise=<value>
-     Sets the advertise address to use.
-
-  -advertise-wan=<value>
-     Sets address to advertise on WAN instead of -advertise address.
-
-  -allow-write-http-from=<value>
-     Only allow write endpoint calls from given network. CIDR format,
-     can be specified multiple times.
-
-  -alt-domain=<value>
-     Alternate domain to use for DNS interface.
-
-  -bind=<value>
-     Sets the bind address for cluster communication.
-
-  -bootstrap
-     Sets server to bootstrap mode.
-
-  -bootstrap-expect=<value>
-     Sets server to expect bootstrap mode.
-
-  -check_output_max_size=<value>
-     Sets the maximum output size for checks on this agent
-
-  -client=<value>
-     Sets the address to bind for client access. This includes RPC, DNS,
-     HTTP, HTTPS and gRPC (if configured).
-
-  -config-dir=<value>
-     Path to a directory to read configuration files from. This
-     will read every file ending in '.json' as configuration in this
-     directory in alphabetical order. Can be specified multiple times.
-
-  -config-file=<value>
-     Path to a file in JSON or HCL format with a matching file
-     extension. Can be specified multiple times.
-
-  -config-format=<value>
-     Config files are in this format irrespective of their extension.
-     Must be 'hcl' or 'json'
-
-  -data-dir=<value>
-     Path to a data directory to store agent state.
-
-  -dev
-     Starts the agent in development mode.
-
-  -disable-host-node-id
-     Setting this to true will prevent Consul from using information
-     from the host to generate a node ID, and will cause Consul to
-     generate a random node ID instead.
-
-  -disable-keyring-file
-     Disables the backing up of the keyring to a file.
-
-  -dns-port=<value>
-     DNS port to use.
-
-  -domain=<value>
-     Domain to use for DNS interface.
-
-  -enable-local-script-checks
-     Enables health check scripts from configuration file.
-
-  -enable-script-checks
-     Enables health check scripts.
-
-  -encrypt=<value>
-     Provides the gossip encryption key.
-
-  -grpc-port=<value>
-     Sets the gRPC API port to listen on (currently needed for Envoy xDS
-     only).
-
-  -hcl=<value>
-     hcl config fragment. Can be specified multiple times.
-
-  -http-port=<value>
-     Sets the HTTP API port to listen on.
-
-  -join=<value>
-     Address of an agent to join at start time. Can be specified
-     multiple times.
-
-  -join-wan=<value>
-     Address of an agent to join -wan at start time. Can be specified
-     multiple times.
-
-  -log-file=<value>
-     Path to the file the logs get written to
-
-  -log-level=<value>
-     Log level of the agent.
-
-  -log-rotate-bytes=<value>
-     Maximum number of bytes that should be written to a log file
-
-  -log-rotate-duration=<value>
-     Time after which log rotation needs to be performed
-
-  -log-rotate-max-files=<value>
-     Maximum number of log file archives to keep
-
-  -node=<value>
-     Name of this node. Must be unique in the cluster.
-
-  -node-id=<value>
-     A unique ID for this node across space and time. Defaults to a
-     randomly-generated ID that persists in the data-dir.
-
-  -node-meta=<key:value>
-     An arbitrary metadata key/value pair for this node, of the format
-     `key:value`. Can be specified multiple times.
-
-  -non-voting-server
-     (Enterprise-only) This flag is used to make the server not
-     participate in the Raft quorum, and have it only receive the data
-     replication stream. This can be used to add read scalability to
-     a cluster in cases where a high volume of reads to servers are
-     needed.
-
-  -pid-file=<value>
-     Path to file to store agent PID.
-
-  -protocol=<value>
-     Sets the protocol version. Defaults to latest.
-
-  -raft-protocol=<value>
-     Sets the Raft protocol version. Defaults to latest.
-
-  -recursor=<value>
-     Address of an upstream DNS server. Can be specified multiple times.
-
-  -rejoin
-     Ignores a previous leave and attempts to rejoin the cluster.
-
-  -retry-interval=<value>
-     Time to wait between join attempts.
-
-  -retry-interval-wan=<value>
-     Time to wait between join -wan attempts.
-
-  -retry-join=<value>
-     Address of an agent to join at start time with retries enabled. Can
-     be specified multiple times.
-
-  -retry-join-wan=<value>
-     Address of an agent to join -wan at start time with retries
-     enabled. Can be specified multiple times.
-
-  -retry-max=<value>
-     Maximum number of join attempts. Defaults to 0, which will retry
-     indefinitely.
-
-  -retry-max-wan=<value>
-     Maximum number of join -wan attempts. Defaults to 0, which will
-     retry indefinitely.
-
-  -segment=<value>
-     (Enterprise-only) Sets the network segment to join.
-
-  -serf-lan-bind=<value>
-     Address to bind Serf LAN listeners to.
-
-  -serf-lan-port=<value>
-     Sets the Serf LAN port to listen on.
-
-  -serf-wan-bind=<value>
-     Address to bind Serf WAN listeners to.
-
-  -serf-wan-port=<value>
-     Sets the Serf WAN port to listen on.
-
-  -server
-     Switches agent to server mode.
-
-  -server-port=<value>
-     Sets the server port to listen on.
-
-  -syslog
-     Enables logging to syslog.
-
-  -ui
-     Enables the built-in static web UI server.
-
-  -ui-content-path=<value>
-     Sets the external UI path to a string. Defaults to: /ui/
-
-  -ui-dir=<value>
-     Path to directory containing the web UI resources.
 
 部署启动
 下载consul文件，consul download：
@@ -711,6 +508,114 @@ tar -xvf consul-template_0.19.5_linux_amd64.tgz
 解压后得到一个二进制文件consul-template。
 ```
 
+go run main.go 
+==== Main Begin ====
+serviceName=test.server
+2019/08/12 12:22:33 get consul config fail: error loading source consul: source not found: test/server
+exit status 1
+
+
+git clone https://github.com/golang/sys.git
+
+../github.com/nats-io/nkeys/keypair.go:21:2: cannot find package "golang.org/x/crypto/ed25519" in any of:
+	/data/git/labula8/test/goTest/go/src/golang.org/x/crypto/ed25519 (from $GOROOT)
+	/data/git/labula8/test/goTest/work/src/golang.org/x/crypto/ed25519 (from $GOPATH)
+[root@localhost]/data/git/labula8/test/goTest/work/src/hello_world# go get golang.org/x/crypto
+package golang.org/x/crypto: unrecognized import path "golang.org/x/crypto" (https fetch: Get https://golang.org/x/crypto?go-get=1: dial tcp 216.239.37.1:443: i/o timeout)
+
+git clone https://github.com/golang/crypto.git
+
+# github.com/micro/go-micro/client/grpc
+../github.com/micro/go-micro/client/grpc/codec.go:23:24: undefined: encoding.Codec
+# github.com/micro/go-micro/server/grpc
+../github.com/micro/go-micro/server/grpc/codec.go:24:24: undefined: encoding.Codec
+
+```
+  1 package grpc
+  2 
+  3 import (
+  4     "encoding/json"
+  5     "fmt"
+  6     "strings"
+  7 
+  8     b "bytes"
+  9 
+ 10     "github.com/golang/protobuf/jsonpb"
+ 11     "github.com/golang/protobuf/proto"
+ 12     "github.com/micro/go-micro/codec"
+ 13     "github.com/micro/go-micro/codec/bytes"
+ 14     "github.com/micro/go-micro/codec/jsonrpc"
+ 15     "github.com/micro/go-micro/codec/protorpc"
+ 16     "google.golang.org/grpc"
+ 17     "google.golang.org/grpc/encoding"
+ 18     "google.golang.org/grpc/metadata"
+ 19 )
+ 20 
+ 21 type jsonCodec struct{}
+ 22 type bytesCodec struct{}
+ 23 type protoCodec struct{}
+ 24 type wrapCodec struct{ encoding.Codec }
+```
+
+go get github.com/lucas-clemente/quic-go
+
+go get github.com/micro/protobuf/protoc-gen-go
+
+protoc --go_out=plugins=micro:. hello_world.proto
+
+curl http://localhost:8500/v1/agent/service/register -X PUT -i -H "Content-Type:application/json" -d '{"ID":"kv", "Name":"kv", "Address":"127.0.0.1", "port":8000}'
+
+curl http://localhost:8500/v1/agent/service/register -X PUT -i -H "Content-Type:application/json" -d '{"ID":"register", "Name":"register", "Address":"127.0.0.1", "port":8100}'
+
+curl http://localhost:8500/v1/catalog/service/kv | python -m json.tool
+
+./consul agent -server -ui -bootstrap-expect=1 -data-dir=./data/ -node=devmaster -advertise=192.168.56.102 -bind=0.0.0.0 -client=0.0.0.0
+
+curl http://localhost:8500/v1/catalog/service/yutest | python -m json.tool
+[
+    {
+        "Address": "192.168.56.102",
+        "CreateIndex": 32422,
+        "Datacenter": "dc1",
+        "ID": "849a6ad1-79c7-c5d0-b7fb-ce36c9167df2",
+        "ModifyIndex": 32422,
+        "Node": "devmaster",
+        "NodeMeta": {
+            "consul-network-segment": ""
+        },
+        "ServiceAddress": "10.10.10.129",
+        "ServiceConnect": {},
+        "ServiceEnableTagOverride": false,
+        "ServiceID": "yutest-6990e32b-96fc-4dfa-be8e-31e44d8c6155",
+        "ServiceKind": "",
+        "ServiceMeta": {},
+        "ServiceName": "yutest",
+        "ServicePort": 28596,
+        "ServiceProxy": {},
+        "ServiceProxyDestination": "",
+        "ServiceTags": [
+            "t-789caa562a294acc2b2ec82f2a51b252ca28292950aa05040000ffff4f930768",
+            "t-789caa564a2acacf4e2d52b252ca28292950aa05040000ffff364d0600",
+            "t-789caa562a4e2d2a4b2d52b252ca2d4d2e50aa05040000ffff37200607",
+            "t-789caa562a4a4dcf2c2e29aa54b2524acecf2b2ecd51aa05040000ffff560f07c8",
+            "t-789caa562a28ca2fc94fcecf51b252ca2d4d2e50aa05040000ffff46a906e2",
+            "e-789c9490c1cac2301084df65cfe53ffd78c8432888371159e928856453b31b4125ef2e85125bb0a0e7ef9b619827090790a35d8cfe6f23be13ac733821514309d70c3572d59a0adb913664f77e19ded86728b97d2db970c0b16bdfc1dc89adfe27ae64ef4b53036a9cec7b1df243f723ca7ccc47ff508637b48fa258bc63c40b7f543a1f4201c62d1b0fb56a091cc8d199bd824a79050000ffff207b8e6d",
+            "e-789c7ccebdaac24010c5f1773975b8d5c5625fc04610d44e44067294c0ee24666605917d770984f8516cff9b33ff2754121170e8fbf8b71da86b49dc74cabd8ba3c1c85ba639c2227fd16e160dfc31d4c15d62a6211c97b1ab249ebbf67d9c3bf5d5ff87d51c633995a9c4865e8dd59499545a16f1f5a041a24b2b2ed3bcf9484908b84834a29457000000ffff7f25677d",
+            "e-789c8ccd4d0ac2400cc5f1bbbc75f1003985883b7111308a90f9689311a4ccdd652a161d37dde6fdc96f46e420201c53d2ddfe1e6f1830c958c41cb4ae6d38c88801feccbf87076b11039dd6f82b339fde2f3f552caaf55c9b613945931eb1dc21cbe11fb9b0f3162788f3d2d2dc2ae100c295d504b5be020000ffffbef454e3",
+            "e-789c8ccd3d0ac24014c4f1bb4c1dacc462cf6025568ac8838c12d88f98f75610d9bb4b20ae825b58ff67f83d1125100efb94fcea9022b7831a3a4cbc65aac1d5c53bee96d2c11e633bdcc5672adcb19eaf12781efacf290fd136ebaf6dccde975399651d535436e92535ec5a7e713531fe43079af46232d36a1325c0e1225e89525e010000ffff419666ed",
+            "v-789cca492c492d2e01040000ffff08cc028e"
+        ],
+        "ServiceWeights": {
+            "Passing": 1,
+            "Warning": 1
+        },
+        "TaggedAddresses": {
+            "lan": "192.168.56.102",
+            "wan": "192.168.56.102"
+        }
+    }
+]
+
 ## 参考
 
 https://github.com/micro/go-micro
@@ -736,6 +641,14 @@ https://github.com/spf13/viper
 
 https://github.com/uber-go/zap
 
+http://btfak.com/%E5%BE%AE%E6%9C%8D%E5%8A%A1/2016/03/28/go-micro/
+https://micro.mu/docs/cn/index.html
+
+https://www.cnblogs.com/li-peng/p/9558421.html
+https://www.cnblogs.com/li-peng/p/9598879.html
+
+https://studygolang.com/articles/11520
+
 iris-go
 https://learnku.com/docs/iris-go/10/why/3759
 
@@ -757,6 +670,8 @@ consul
 https://releases.hashicorp.com/consul/1.5.3/
 
 http://blog.cxiangnet.cn/2018/04/10/consul-%E4%BB%8B%E7%BB%8D/
+
+https://www.cnblogs.com/acm-bingzi/p/consul_ip.html
 
 logrus
 
