@@ -154,6 +154,7 @@ go-micro
 https://juejin.im/entry/5b6feed36fb9a0098b25143c
 https://www.jianshu.com/p/4ed1010b4c22
 https://segmentfault.com/a/1190000017572032
+https://github.com/micro-in-cn/tutorials/tree/master/microservice-in-micro
 
 go-tool
 
@@ -188,3 +189,39 @@ https://beego.me/docs/intro
 https://www.aicyun.com/
 
 http://www.haodaquan.com/83
+
+ot
+
+https://github.com/Meituan-Dianping/octo-rpc.git
+
+https://blog.csdn.net/meituantech/article/details/80062244
+
+http://www.idcquan.com/Special/2019trucs/
+
+https://1024casts.com/topics
+
+https://www.open-open.com/news/view/505739
+
+https://lmzdx.com/archives/2033
+
+https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web
+
+https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/First_steps/What_is_JavaScript
+
+https://martinfowler.com/articles/microservices.html
+
+https://www.youtube.com/watch?v=wgdBVIX9ifA
+
+https://www.slf4j.org/download.html 
+
+https://thimble.mozilla.org/zh-CN/
+
+https://www.nowcoder.com/
+
+https://blog.csdn.net/itcastcpp
+
+https://www.colinjiang.com/
+
+http://imhuchao.com/1271.html   
+
+https://www.cnblogs.com/andy-songwei/p/9965714.html

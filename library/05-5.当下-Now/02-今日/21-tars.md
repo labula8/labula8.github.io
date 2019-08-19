@@ -54,7 +54,7 @@ DevOps
 无服务治理： 专注于通讯框架，RPC或消息队列模式，部分框架支持多语言开发
     Thrift, Grpc, brpc
 ServiceMesh：支持服务治理，通过SideCar模式解决多语言问题（发展成熟期）
-    Linkerd, envoy, Itso
+    Linkerd, envoy, Istio
 单语言，有服务治理： 在通讯框架基础上，支持服务治理（Java主流）
     Spring Cloud, Dubbo
 多语言，有服务治理： 在通讯框架基础上，支持服务治理，多语言实现
