@@ -177,6 +177,12 @@ protobuf
 https://www.jianshu.com/p/00be93ed230c
 https://www.jianshu.com/p/419efe983cb2
 
+https://segmentfault.com/a/1190000009277748#articleHeader0
+
+https://blog.csdn.net/liupeifeng3514/article/details/78985575
+
+https://www.cnblogs.com/haiguixiansheng/articles/10718531.html
+
 dht
 
 https://github.com/fanpei91/torsniff
@@ -204,3 +210,32 @@ https://beego.me/docs/intro
 https://www.aicyun.com/
 
 http://www.haodaquan.com/83
+
+RPC
+
+https://www.jianshu.com/p/2accc2840a1b
+https://blog.csdn.net/u013201439/article/details/81460373
+https://www.cnblogs.com/LBSer/p/4853234.html
+
+http://users.cs.cf.ac.uk/Dave.Marshall/C/
+http://users.cs.cf.ac.uk/Dave.Marshall/C/node33.html
+
+https://github.com/button-chen/buttonrpc_cpp14
+https://blog.csdn.net/u011371629/article/details/83748769
+
+
+国外
+
+最热门的恐怕就是 twitter的 Finagle，也是netty的深度用户。 https://github.com/twitter/finagle
+
+国内
+
+dubbo   https://github.com/alibaba/dubbo
+大百度到处是C++的天下，于是也有C++的rpc  http://www.oschina.net/p/sofa-pbrpc  
+也有使用Java的部门跟进的 https://github.com/neoremind/navi
+
+还有在oschina中越来越热的几个 rpc框架如下：
+
+commonrpc：  http://www.oschina.net/p/commonrpc
+zbus：  http://www.oschina.net/p/zbus
+mina-app-server:  http://git.oschina.net/yidinghe/mina-app-server
