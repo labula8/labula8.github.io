@@ -239,3 +239,5 @@ dubbo   https://github.com/alibaba/dubbo
 commonrpc£º  http://www.oschina.net/p/commonrpc
 zbus£º  http://www.oschina.net/p/zbus
 mina-app-server:  http://git.oschina.net/yidinghe/mina-app-server
+
+https://www.cnblogs.com/li-peng/category/1060004.html
