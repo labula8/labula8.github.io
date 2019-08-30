@@ -231,7 +231,11 @@ https://blog.csdn.net/u011371629/article/details/83748769
 国内
 
 dubbo   https://github.com/alibaba/dubbo
-大百度到处是C++的天下，于是也有C++的rpc  http://www.oschina.net/p/sofa-pbrpc  
+大百度到处是C++的天下，于是也有C++的rpc  
+    http://www.oschina.net/p/sofa-pbrpc  
+    https://blog.csdn.net/liangtingac/article/details/52673216
+    https://github.com/baidu/sofa-pbrpc/tree/master/src/sofa/pbrpc
+
 也有使用Java的部门跟进的 https://github.com/neoremind/navi
 
 还有在oschina中越来越热的几个 rpc框架如下：
@@ -241,3 +245,36 @@ zbus：  http://www.oschina.net/p/zbus
 mina-app-server:  http://git.oschina.net/yidinghe/mina-app-server
 
 https://www.cnblogs.com/li-peng/category/1060004.html
+
+
+Agones
+
+https://jaas.ai/
+
+
+https://npf.io/
+
+Netty
+
+https://www.jianshu.com/p/b9f3f6a16911
+
+design patten 23
+
+http://c.biancheng.net/view/1320.html
+
+codecept
+
+https://www.yii-china.com/post/detail/389.html
+
+https://packagist.org/packages/myclabs/
+
+
+https://blog.csdn.net/quicmous/article/details/100121382
+https://blog.csdn.net/quicmous/article/details/1646560
+
+http://www.51testing.com/html/12/n-4420812.html
+
+http://www.symfonychina.com/doc/current/email.html
+https://www.wafunny.com/blog/tool/cncf.html
+
+https://www.colabug.com/4217666.html
