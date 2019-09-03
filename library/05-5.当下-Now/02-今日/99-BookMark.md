@@ -278,3 +278,28 @@ http://www.symfonychina.com/doc/current/email.html
 https://www.wafunny.com/blog/tool/cncf.html
 
 https://www.colabug.com/4217666.html
+
+http://www.zsythink.net/archives/category/%E8%BF%90%E7%BB%B4%E7%9B%B8%E5%85%B3/zabbix/
+
+go 1.12
+http://www.imooc.com/article/280980
+
+https://www.cnblogs.com/jkko123/p/6952237.html
+https://www.cnblogs.com/cnsanshao/p/7084808.html
+
+DevOps
+https://www.cnblogs.com/yibutian/p/9561657.html
+
+https://github.com/feiweiwei/BillSpringBatch
+
+https://www.cnblogs.com/yibutian/p/9559440.html
+
+https://leetcode-cn.com/problems/construct-string-from-binary-tree/
+https://www.cnblogs.com/Franck/p/3794272.html
+
+c++ DT
+
+https://www.nowcoder.com/ta/coding-interviews
+
+
+https://github.com/CoderMJLee/BinaryTrees
