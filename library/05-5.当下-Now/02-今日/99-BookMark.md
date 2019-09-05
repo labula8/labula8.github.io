@@ -303,6 +303,30 @@ https://www.nowcoder.com/ta/coding-interviews
 
 
 https://github.com/CoderMJLee/BinaryTrees
+https://github.com/xiufengcheng/DATASTRUCTURE
+https://github.com/yalewoo
+https://github.com/houpengfei88/Play-with-Data-Structures
+
+- blog
+https://tony031218.github.io/
+
+c++11
+
+https://blog.csdn.net/dp323/article/details/80539526
+https://en.cppreference.com/w/cpp/compiler_support
+
+c++14
+
+https://github.com/changkun/modern-cpp-tutorial
+http://www.open-std.org/
+
+gcc-update
+
+https://blog.csdn.net/wanglin199709/article/details/94553903
+
+http://ftp.gnu.org/gnu/gcc/gcc-9.1.0/
+
+
 
 travis-ci
 
@@ -325,6 +349,16 @@ https://wenku.baidu.com/view/cbbf9726dc36a32d7375a417866fb84ae45cc356.html
 https://www.jianshu.com/p/837bb161793a
 https://zh.cppreference.com/w/cpp/language/coroutines
 
+OS
+
+https://www.veryarm.com/149881.html
+
+.net
+
+https://docs.microsoft.com/zh-cn/dotnet/core/
+
+
 OT
 
 https://www.cnblogs.com/angel88/p/8849666.html
+http://dreamyouxi.com/
