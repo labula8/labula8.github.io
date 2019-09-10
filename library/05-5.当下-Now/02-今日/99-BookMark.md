@@ -312,6 +312,8 @@ https://tony031218.github.io/
 
 c++11
 
+http://www.cplusplus.com/
+
 https://blog.csdn.net/dp323/article/details/80539526
 https://en.cppreference.com/w/cpp/compiler_support
 
@@ -320,12 +322,22 @@ c++14
 https://github.com/changkun/modern-cpp-tutorial
 http://www.open-std.org/
 
+https://www.zhihu.com/question/26923785/answer/164510594
+
+vc cmd_cl-exe
+
+https://www.cnblogs.com/mizhongqin/archive/2013/03/11/cmd_cl-exe_vs2010.html
+
+
 gcc-update
 
 https://blog.csdn.net/wanglin199709/article/details/94553903
 
 http://ftp.gnu.org/gnu/gcc/gcc-9.1.0/
 
+https://blog.csdn.net/lianshaohua/article/details/83411684
+
+https://www.cnblogs.com/ToBeExpert/p/10297697.html
 
 
 travis-ci
@@ -362,3 +374,11 @@ OT
 
 https://www.cnblogs.com/angel88/p/8849666.html
 http://dreamyouxi.com/
+
+http://gaclib.net/#~/Demo
+
+https://college.zjut.cc/
+
+http://webpac.lib.tongji.edu.cn/opac/search_adv.php#/result
+
+https://github.com/soulmachine/leetcode
