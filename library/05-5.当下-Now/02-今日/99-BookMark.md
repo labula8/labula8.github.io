@@ -385,6 +385,10 @@ https://college.zjut.cc/
 
 http://webpac.lib.tongji.edu.cn/opac/search_adv.php#/result
 
+https://www.jianshu.com/p/cb3fb46a8682
+
+https://github.com/vczh/vczh_toys
+
 https://github.com/soulmachine/leetcode
 
 https://www.cnblogs.com/yhjd/p/10647203.html
@@ -393,4 +397,8 @@ https://www.cnblogs.com/hanyonglu/archive/2011/04/12/2014212.html
 
 https://www.zcool.com.cn/work/ZNTA4NzI2MA==.html
 
+https://haoqicat.com/
 
+https://note.wiz.cn/web/pages/manage/biz/payRead.html?kb=60a7942f-50b3-4d97-91e8-30657f1266ad
+
+https://github.com/soulmachine/leetcode/
