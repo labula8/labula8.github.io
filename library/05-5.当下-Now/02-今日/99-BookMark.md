@@ -317,6 +317,10 @@ http://www.cplusplus.com/
 https://blog.csdn.net/dp323/article/details/80539526
 https://en.cppreference.com/w/cpp/compiler_support
 
+https://msdn.microsoft.com/zh-cn/ie/hh279654(v=vs.80)
+
+https://skyscribe.github.io/post/2018/12/30/modern-cpp-reflection/
+
 c++14
 
 https://github.com/changkun/modern-cpp-tutorial
@@ -382,3 +386,11 @@ https://college.zjut.cc/
 http://webpac.lib.tongji.edu.cn/opac/search_adv.php#/result
 
 https://github.com/soulmachine/leetcode
+
+https://www.cnblogs.com/yhjd/p/10647203.html
+
+https://www.cnblogs.com/hanyonglu/archive/2011/04/12/2014212.html
+
+https://www.zcool.com.cn/work/ZNTA4NzI2MA==.html
+
+
