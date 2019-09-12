@@ -328,6 +328,8 @@ http://www.open-std.org/
 
 https://www.zhihu.com/question/26923785/answer/164510594
 
+https://www.open-open.com/news/view/ddfd82
+
 vc cmd_cl-exe
 
 https://www.cnblogs.com/mizhongqin/archive/2013/03/11/cmd_cl-exe_vs2010.html
@@ -373,6 +375,19 @@ https://www.veryarm.com/149881.html
 
 https://docs.microsoft.com/zh-cn/dotnet/core/
 
+QT
+
+https://www.cnblogs.com/pyw0818/p/8044295.html
+
+https://code.woboq.org/qt5/
+
+https://github.com/therecipe/qt
+
+http://download.qt.io/
+
+http://download.qt.io/archive/qtcreator/4.4/4.4.1/
+
+https://www.w3cschool.cn/learnroadqt/7rp41j3z.html
 
 OT
 
@@ -402,3 +417,18 @@ https://haoqicat.com/
 https://note.wiz.cn/web/pages/manage/biz/payRead.html?kb=60a7942f-50b3-4d97-91e8-30657f1266ad
 
 https://github.com/soulmachine/leetcode/
+
+https://www.cnblogs.com/findumars/category/574697.html
+
+https://github.com/xingshaocheng/architect-awesome
+
+https://dourok.info/notes/
+
+https://www.cnblogs.com/fuzhe1989/p/3546598.html
+
+https://gitee.com/drabel/LibQQt
+
+http://www.stroustrup.com/good_concepts.pdf
+
+https://aras-p.info/blog/2018/12/28/Modern-C-Lamentations/
+
