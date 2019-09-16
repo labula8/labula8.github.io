@@ -324,6 +324,8 @@ https://skyscribe.github.io/post/2018/12/30/modern-cpp-reflection/
 
 http://rdc.hundsun.com/portal/article/678.html
 
+https://www.cnblogs.com/pugang/p/7258881.html
+
 c++14
 
 https://github.com/changkun/modern-cpp-tutorial
