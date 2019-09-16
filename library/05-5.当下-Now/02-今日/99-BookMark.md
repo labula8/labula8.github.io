@@ -310,6 +310,7 @@ https://github.com/houpengfei88/Play-with-Data-Structures
 - blog
 https://tony031218.github.io/
 
+
 c++11
 
 http://www.cplusplus.com/
@@ -320,6 +321,8 @@ https://en.cppreference.com/w/cpp/compiler_support
 https://msdn.microsoft.com/zh-cn/ie/hh279654(v=vs.80)
 
 https://skyscribe.github.io/post/2018/12/30/modern-cpp-reflection/
+
+http://rdc.hundsun.com/portal/article/678.html
 
 c++14
 
@@ -431,4 +434,9 @@ https://gitee.com/drabel/LibQQt
 http://www.stroustrup.com/good_concepts.pdf
 
 https://aras-p.info/blog/2018/12/28/Modern-C-Lamentations/
+
+http://rdc.hundsun.com/portal/article/612.html
+
+
+
 
