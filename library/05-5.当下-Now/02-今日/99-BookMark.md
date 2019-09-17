@@ -306,6 +306,7 @@ https://github.com/CoderMJLee/BinaryTrees
 https://github.com/xiufengcheng/DATASTRUCTURE
 https://github.com/yalewoo
 https://github.com/houpengfei88/Play-with-Data-Structures
+https://github.com/dunwu/algorithm-tutorial
 
 - blog
 https://tony031218.github.io/
@@ -439,6 +440,10 @@ https://aras-p.info/blog/2018/12/28/Modern-C-Lamentations/
 
 http://rdc.hundsun.com/portal/article/612.html
 
+http://www.nowamagic.net/academy/category/30/
+http://www.nowamagic.net/academy/detail/68150203
 
+https://github.com/wx-chevalier/Developer-Zero-To-Mastery
 
+https://github.com/topics/wx-code
 
