@@ -452,3 +452,22 @@ https://cloud.tencent.com/developer/article/1467933
 https://github.com/sanshengshui
 
 https://cloud.tencent.com/developer/article/1491646
+
+https://www.techug.com/post/linux-magic-bye.html
+
+http://mesos.apache.org/
+
+https://www.xuebuyuan.com/3233688.html
+
+https://cloud.tencent.com/developer/article/1370823
+
+https://blog.51cto.com/5001660/2296490
+
+https://cloud.tencent.com/developer/article/1477384
+
+https://cloud.tencent.com/developer/article/1477383
+
+https://software.intel.com/zh-cn/articles/using-modern-cpp-techniques-to-enhance-multicore-optimizations
+
+https://github.com/Qihoo360/evpp/blob/master/readme_cn.md
+
