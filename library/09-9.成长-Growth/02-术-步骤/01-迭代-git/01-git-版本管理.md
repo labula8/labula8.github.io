@@ -49,6 +49,10 @@ https://github.com/labula8
     …or import code from another repository
 
     You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+    
+    git config --global user.name "labula8"
+    git config --global user.email labula8@qq.com
+    git commit --amend --reset-author
 
 ## 免密码提交代码
 
@@ -85,6 +89,7 @@ https://github.com/labula8
     git remote -v
 
 ## 配置
+
     git init
     git push --set-upstream origin master
     git push -u origin master

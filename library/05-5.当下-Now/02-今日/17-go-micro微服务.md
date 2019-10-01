@@ -620,10 +620,34 @@ curl http://localhost:8500/v1/catalog/service/yutest | python -m json.tool
 
 https://github.com/micro/go-micro
 
+https://gitee.com/mirrors/go-micro
+
 https://studygolang.com/articles/11520
 https://studygolang.com/articles/21803
 
 https://studygolang.com/search?q=micro
+
+https://micro.mu/docs/go-micro.html
+https://micro.mu/docs/cn/index.html
+
+https://github.com/micro/protoc-gen-micro
+https://github.com/micro/examples/tree/master/greeter
+
+https://github.com/micro-in-cn/tutorials/tree/master/examples/basic-practices
+
+https://micro.mu/blog/2016/04/18/micro-architecture.html
+
+https://github.com/micro/go-micro#getting-started
+
+https://godoc.org/github.com/micro/go-micro#Option
+
+Micro的架构与微服务的设计模式
+http://btfak.com/%E5%BE%AE%E6%9C%8D%E5%8A%A1/2016/04/18/micro-architecture/
+
+http://btfak.com/%E5%BE%AE%E6%9C%8D%E5%8A%A1/2016/03/28/go-micro/
+
+https://www.cnblogs.com/li-peng/p/9598879.html
+https://www.cnblogs.com/li-peng/p/9689786.html
 
 http://gorm.book.jasperxu.com/
 
@@ -665,13 +689,43 @@ https://www.jianshu.com/p/4ed1010b4c22
 
 https://segmentfault.com/a/1190000017572032
 
+https://www.jianshu.com/p/b2143395ca7d
+
+https://www.cnblogs.com/jhhe66/articles/9530757.html
+
 consul
+
+https://www.consul.io/api/agent/service.html
 
 https://releases.hashicorp.com/consul/1.5.3/
 
 http://blog.cxiangnet.cn/2018/04/10/consul-%E4%BB%8B%E7%BB%8D/
 
 https://www.cnblogs.com/acm-bingzi/p/consul_ip.html
+
+https://www.lijiaocn.com/%E9%A1%B9%E7%9B%AE/2018/08/17/consul-usage.html
+
+https://segmentfault.com/a/1190000018731395?utm_source=tag-newest
+
+https://segmentfault.com/a/1190000018731395
+
+https://www.cnblogs.com/xiaohanlin/p/8016803.html
+
+https://www.cnblogs.com/williamjie/p/9369713.html
+
+https://www.cnblogs.com/bossma/p/9756809.html
+
+https://www.jianshu.com/p/2fa8f33fa1dd
+
+https://www.cnblogs.com/lori/p/8391351.html
+
+https://www.cnblogs.com/ASPNET2008/p/6892137.html
+
+https://www.jianshu.com/p/92955eeb4c41
+
+zookeeper vs consul
+
+https://mp.weixin.qq.com/s?__biz=MzA5OTAyNzQ2OA==&mid=208173179&idx=1&sn=392c17b136c2bf570429785702d98353&scene=0&key=dffc561732c226516d4dccb1f165c5b24e823a11384b262d55dc20e3bd0d4cd21c219e8fc2bb2817fd3ccd46f36db04a&ascene=14&uin=ODY5ODkzMzQw&devicetype=iPhone+OS8.4.1&version=16020610&nettype=WIFI&fontScale=100&pass_ticket=yxu6Cmc0yX5TWpekVDtFbQhGNYo%2BPbTVmjkpYiq2xiXv6Mbhq3rZUqZkbefMNm11
 
 logrus
 
