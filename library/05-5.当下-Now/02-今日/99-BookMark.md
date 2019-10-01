@@ -212,7 +212,6 @@ https://www.aicyun.com/
 
 http://www.haodaquan.com/83
 
-<<<<<<< HEAD
 ot
 
 https://github.com/Meituan-Dianping/octo-rpc.git
@@ -277,4 +276,14 @@ dubbo   https://github.com/alibaba/dubbo
 commonrpc£º  http://www.oschina.net/p/commonrpc
 zbus£º  http://www.oschina.net/p/zbus
 mina-app-server:  http://git.oschina.net/yidinghe/mina-app-server
->>>>>>> b97c01a87d689fd8d349d0c9fc67e94f8eec4493
+
+https://www.infoq.cn/topic/programing%20languages
+
+https://rrl360.com/boke/36886
+
+https://www.cnblogs.com/Qing-840/p/9283367.html
+https://blog.csdn.net/qq_38950316/article/details/81087809
+
+https://blog.csdn.net/e_wsq/article/details/81303713
+
+https://www.cnblogs.com/aresxin/p/8035137.html
