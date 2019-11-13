@@ -1,5 +1,4 @@
 # wiki
 
 tese
-ttttt
 
