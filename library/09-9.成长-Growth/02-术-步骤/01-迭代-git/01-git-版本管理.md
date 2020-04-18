@@ -95,15 +95,28 @@ https://github.com/labula8
     git push -u origin master
     git pull --rebase origin master
 
-    git remote add origin https://github.com/labula8/cppTest.git
+    #git remote add origin https://github.com/labula8/cppTest.git
     git remote set-url origin git@github.com:labula8/cppTest.git
     git config --global push.default simple
 
     ssh -T git@github.com
 
+    ==gitee
+    
+    git init
+    git push --set-upstream origin master
+    git push -u origin master
+    git pull --rebase origin master
 
+    #git remote add origin https://gitee.com/labula8/cppTest.git
+    git remote set-url origin git@gitee.com:labula8/cppTest.git
+    git config --global push.default simple
 
+    ssh -T git@gitee.com
 
+## 常用操作
+
+    git pull; git add -A; git commit -m "update"; git push;
 
 
 
