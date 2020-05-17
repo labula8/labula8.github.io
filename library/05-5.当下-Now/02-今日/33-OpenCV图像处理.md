@@ -96,3 +96,17 @@
 		7.2.2　第一个基于GPU的程序　166
 		7.2.3　实时处理　169
 	7.3　小结　173
+
+## 参考
+
+·主资源库 
+	"http://sourceforge.net/projects/opencvlibrary"
+·测试数据资源库
+	 "https://github.com/itseez/opencv_extra"
+·贡献资源库
+	"http://github.com/itseez/opencv_contrib"
+
+	https://www.rapidee.com/
+
+
+
